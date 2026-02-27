@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ótica Zap - Você Merece Ver Bem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/867/867926.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-glasses"></i>
+                <span>Ótica Zap</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar óculos, lentes...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-icons">
+                <button id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Ótica Zap</h1>
+            <p>Você merece ver bem com estilo e preço acessível!</p>
+            <a href="#produtos" class="btn-banner">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="sol">Óculos de Sol</button>
+        <button class="filter-btn" data-category="grau">Óculos de Grau</button>
+        <button class="filter-btn" data-category="armacao">Armações</button>
+        <button class="filter-btn" data-category="lentes">Lentes</button>
+        <button class="filter-btn" data-category="acessorios">Acessórios</button>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="products-section">
+        <h2>Nosso Catálogo</h2>
+        <div id="products-grid" class="products-grid">
+            <!-- Produtos inseridos via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Carrinho (Modal) -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Meu Carrinho</h2>
+                <button id="close-cart" class="close-btn">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart">Seu carrinho está vazio</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">R$ 0,00</span>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">
+                    <i class="fas fa-credit-card"></i> Finalizar Compra
+                </button>
+                <button id="clear-cart-btn" class="clear-cart-btn">
+                    <i class="fas fa-trash"></i> Limpar Carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ótica Zap</h3>
+                <p>Sua visão é nossa prioridade. Qualidade e preço justo.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Nossas Lojas</a>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (92) 99999-9999</p>
+                <p><i class="fas fa-envelope"></i> contato@oticazap.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> Manaus, AM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ótica Zap. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="produtos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
